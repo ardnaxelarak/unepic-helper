@@ -12,6 +12,7 @@
 <html>
 <head>
     <link type="text/css" rel="stylesheet" href="webjars/jquery-mobile/1.4.5/jquery.mobile.min.css" />
+    <link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
     <script src="webjars/jquery/2.1.4/jquery.min.js"> </script>
     <script src="webjars/jquery-mobile/1.4.5/jquery.mobile.min.js"> </script>
     <script src="character-build.js"> </script>
@@ -29,17 +30,32 @@
         <a onclick="levelPlusClicked();" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
     </div>
     <div id="allocation-div">
+        <table>
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Ranks</th>
+                </tr>
+            </thead>
+            <tbody>
 <%
 for (String tag : categories) {
 %>
-    <div id="<%= tag %>-div" data-role="controlgroup" data-type="horizontal" data-mini="true">
-        <a onclick="minusClicked('<%= tag %>');" class="ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
-        <a id="<%= tag %>-value" class="ui-btn ui-corner-all">1</a>
-        <a onclick="plusClicked('<%= tag %>');" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
-    </div>
+                <tr>
+                    <th class="right"><%= tag %>: </th>
+                    <td class="no-pad">
+                        <div id="<%= tag %>-div" data-role="controlgroup" data-type="horizontal" data-mini="true" class="no-pad">
+                            <a onclick="minusClicked('<%= tag %>');" class="ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
+                            <a id="<%= tag %>-value" class="ui-btn ui-corner-all">1</a>
+                            <a onclick="plusClicked('<%= tag %>');" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
+                        </div>
+                    </td>
+                </tr>
 <%
 }
 %>
+            </tbody>
+        </table>
     </div>
     <div id="remaining-div" data-role="controlgroup" data-type="horizontal" data-mini="true">
         <a class="ui-btn ui-corner-all">Remaining Points:</a>
