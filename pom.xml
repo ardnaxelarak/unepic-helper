@@ -55,9 +55,19 @@
 
         <!-- Web Dependencies -->
         <dependency>
-            <groupId>com.efsavage.jquery</groupId>
-            <artifactId>jquery-maven</artifactId>
-            <version>1.7.2</version>
+            <groupId>org.webjars</groupId>
+            <artifactId>webjars-servlet-2.x</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+            <version>2.1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery-mobile</artifactId>
+            <version>1.4.5</version>
         </dependency>
 	</dependencies>
 
