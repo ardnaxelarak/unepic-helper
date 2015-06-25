@@ -36,8 +36,10 @@ $(document).ready(function() {
 function plusClicked(id) {
     var tag = "#" + id + "-value"
     var value = parseInt($(tag).text());
-    $(tag).text(value + 1);
-    updateTotal();
+    if (value < level) {
+        $(tag).text(value + 1);
+        updateTotal();
+    }
 }
 
 function minusClicked(id) {
@@ -68,7 +70,12 @@ function levelPlusClicked() {
 function updateTotal() {
     var remaining = 5 + 6 * level;
     $("#allocation-div a[id$='value']").each(function() {
-        remaining -= parseInt($(this).text());
+        var value = parseInt($(this).text());
+        if (value > level) {
+            $(this).text(level);
+            value = level;
+        }
+        remaining -= value;
     });
     $("#remaining-value").text(remaining);
 }
