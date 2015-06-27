@@ -1,0 +1,31 @@
+<dataset>
+    <category name="weapons">
+        <skill name="dagger" start="1" display="Daggers" essence="KP" />
+        <skill name="sword" start="1" display="Swords" essence="KP" />
+        <skill name="polearm" start="1" display="Polearms" essence="KP" />
+        <skill name="mace" start="1" display="Maces" essence="KP" />
+        <skill name="axe" start="1" display="Axes" essence="KP" />
+        <skill name="bow" start="1" display="Bows" essence="KP" />
+        <skill name="staff" start="1" display="Staves" />
+        <skill name="wand" start="1" display="Wands" />
+    </category>
+    <category name="defense">
+        <skill name="constitution" start="1" display="Constitution" />
+        <skill name="armor" start="1" display="Armor" />
+        <skill name="robe" start="1" display="Robes" />
+    </category>
+    <category name="magic">
+        <skill name="fire" start="0" display="Fire" essence="Red" />
+        <skill name="frost" start="0" display="Frost" essence="Blue" />
+        <skill name="healing" start="0" display="Healing" essence="Green" />
+        <skill name="alteration" start="0" display="Alteration" essence="Yellow" />
+        <skill name="mental" start="0" display="Mental" essence="Golden" />
+        <skill name="protection" start="0" display="Protection" essence="Crystalline" />
+        <skill name="arcane" start="0" display="Arcane" essence="Arcane" />
+        <skill name="light" start="0" display="Light" essence="Divine Favor" />
+    </category>
+    <listing skill="dagger">
+        <spell name="Dagger Mastery 1" level="2" cost="2">
+        </spell>
+    </listing>
+</dataset>
