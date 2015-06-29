@@ -35,6 +35,7 @@
                 <tr>
                     <th>Skill</th>
                     <th>Ranks</th>
+                    <th class="padded">Benefits</th>
                 </tr>
             </thead>
             <tbody>
@@ -48,6 +49,10 @@ for (String tag : categories) {
                             <a onclick="minusClicked('<%= tag %>');" class="ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
                             <a id="<%= tag %>-value" class="ui-btn ui-corner-all">1</a>
                             <a onclick="plusClicked('<%= tag %>');" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
+                        </div>
+                    </td>
+                    <td class="padded">
+                        <div id="<%= tag %>-benefits">
                         </div>
                     </td>
                 </tr>

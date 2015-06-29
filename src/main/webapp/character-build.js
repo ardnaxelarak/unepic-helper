@@ -30,6 +30,7 @@ $(document).ready(function() {
         console.log(key + ": " + value.min);
         $("#" + key + "-value").text(value.min);
     });
+    $("#constitution-benefits").append("<p id=hp-total></p>");
     updateTotal();
 });
 
@@ -77,5 +78,12 @@ function updateTotal() {
         }
         remaining -= value;
     });
+    var hptotal = 110 + 20 * level;
+    $("#constitution-value").each(function() {
+        var value = parseInt($(this).text());
+        hptotal += 20 * value;
+    });
+
     $("#remaining-value").text(remaining);
+    $("#hp-total").text(hptotal + " hp");
 }
