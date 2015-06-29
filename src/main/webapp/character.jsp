@@ -23,13 +23,13 @@
     <div data-role="header">
         <h1>Character Build</h1>
     </div>
-    <div id="level-div" data-role="controlgroup" data-type="horizontal" data-mini="true">
+    <div class="level_div" data-role="controlgroup" data-type="horizontal" data-mini="true">
         <a class="ui-btn ui-corner-all">Character Level: </a>
         <a onclick="levelMinusClicked();" class="ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
-        <a id="level-value" class="ui-btn ui-corner-all">5</a>
+        <a class="level_value ui-btn ui-corner-all">5</a>
         <a onclick="levelPlusClicked();" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
     </div>
-    <div id="allocation-div">
+    <div class="allocation_div">
         <table>
             <thead>
                 <tr>
@@ -38,33 +38,27 @@
                     <th class="padded">Benefits</th>
                 </tr>
             </thead>
-            <tbody>
-<%
-for (String tag : categories) {
-%>
-                <tr>
-                    <th class="right"><%= tag %>: </th>
+            <tbody class="allocation_body">
+                <tr class="allocation_row template">
+                    <th class="right"><span class="display_name"></span>: </th>
                     <td class="no-pad">
-                        <div id="<%= tag %>-div" data-role="controlgroup" data-type="horizontal" data-mini="true" class="no-pad">
-                            <a onclick="minusClicked('<%= tag %>');" class="ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
-                            <a id="<%= tag %>-value" class="ui-btn ui-corner-all">1</a>
-                            <a onclick="plusClicked('<%= tag %>');" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
+                        <div class="control_div no-pad" data-role="controlgroup" data-type="horizontal" data-mini="true">
+                            <a class="minus_btn ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
+                            <a class="skill_value ui-btn ui-corner-all">1</a>
+                            <a class="plus_btn ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
                         </div>
                     </td>
                     <td class="padded">
-                        <div id="<%= tag %>-benefits">
+                        <div class="benefits_div">
                         </div>
                     </td>
                 </tr>
-<%
-}
-%>
             </tbody>
         </table>
     </div>
-    <div id="remaining-div" data-role="controlgroup" data-type="horizontal" data-mini="true">
+    <div data-role="controlgroup" data-type="horizontal" data-mini="true">
         <a class="ui-btn ui-corner-all">Remaining Points:</a>
-        <a id="remaining-value" class="ui-btn ui-corner-all">1</a>
+        <a class="remaining_points ui-btn ui-corner-all">1</a>
     </div>
 </div>
 </body>
