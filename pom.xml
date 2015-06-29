@@ -23,6 +23,12 @@
 	<dependencies>
 		<!-- Compile/runtime dependencies -->
 		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.json</artifactId>
+			<version>1.0.4</version>
+		</dependency>
+
+		<dependency>
 			<groupId>com.google.appengine</groupId>
 			<artifactId>appengine-api-1.0-sdk</artifactId>
 			<version>${appengine.version}</version>
