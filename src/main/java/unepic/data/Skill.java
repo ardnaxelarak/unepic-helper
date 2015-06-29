@@ -16,6 +16,11 @@ public class Skill implements Jsonable
         this.essence = essence;
     }
 
+    public String getName()
+    {
+        return name;
+    }
+
     @Override
     public JsonObjectBuilder buildJSON(JsonBuilderFactory factory)
     {

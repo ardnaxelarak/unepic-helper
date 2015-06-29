@@ -29,6 +29,13 @@ public class Dataset implements Jsonable
         for (SkillCategory category : categories)
             jab.add(category.buildJSON(factory));
         job.add("categories", jab);
+
+        JsonObjectBuilder info = factory.createObjectBuilder();
+        for (SkillCategory sc : categories)
+            for (Skill s : sc)
+                info.add(s.getName(), s.buildJSON(factory));
+        job.add("info", info);
+
         return job;
     }
 }

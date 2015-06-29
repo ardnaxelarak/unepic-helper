@@ -3,7 +3,7 @@ package unepic.data;
 import java.util.*;
 import javax.json.*;
 
-public class SkillCategory implements Jsonable
+public class SkillCategory implements Jsonable, Iterable<Skill>
 {
     private String name;
     private List<Skill> skills;
@@ -20,6 +20,12 @@ public class SkillCategory implements Jsonable
     }
 
     @Override
+    public Iterator<Skill> iterator()
+    {
+        return skills.iterator();
+    }
+
+    @Override
     public JsonObjectBuilder buildJSON(JsonBuilderFactory factory)
     {
         JsonObjectBuilder job = factory.createObjectBuilder();
@@ -30,7 +36,7 @@ public class SkillCategory implements Jsonable
 
         JsonArrayBuilder jab = factory.createArrayBuilder();
         for (Skill skill : skills)
-            jab.add(skill.buildJSON(factory));
+            jab.add(skill.getName());
         job.add("skills", jab);
         return job;
     }
