@@ -2,7 +2,7 @@ package unepic.data;
 
 import javax.json.*;
 
-public interface Jsonable
+public interface JsonableObject
 {
     public JsonObjectBuilder buildJSON(JsonBuilderFactory factory);
 }

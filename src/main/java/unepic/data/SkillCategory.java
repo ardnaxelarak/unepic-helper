@@ -3,7 +3,7 @@ package unepic.data;
 import java.util.*;
 import javax.json.*;
 
-public class SkillCategory implements Jsonable, Iterable<Skill>
+public class SkillCategory implements JsonableObject, Iterable<Skill>
 {
     private String name;
     private List<Skill> skills;

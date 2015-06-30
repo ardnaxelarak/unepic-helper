@@ -49,6 +49,10 @@ public class DatasetParser implements ElementParser
         {
             return new CategoryParser();
         }
+        else if (localName.equals("listing"))
+        {
+            return new ListingParser();
+        }
         else
         {
             System.err.println("unrecognized dataset child element '" + localName + "': ignoring");
@@ -61,6 +65,10 @@ public class DatasetParser implements ElementParser
         if (child instanceof CategoryParser)
         {
             dataset.addCategory(((CategoryParser)child).getCategory());
+        }
+        else if (child instanceof ListingParser)
+        {
+            dataset.addListing(((ListingParser)child).getListing());
         }
     }
 

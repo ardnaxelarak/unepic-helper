@@ -3,7 +3,7 @@ package unepic.data;
 import java.util.*;
 import javax.json.*;
 
-public class Skill implements Jsonable
+public class Skill implements JsonableObject
 {
     private String name, display, essence;
     private int start;
