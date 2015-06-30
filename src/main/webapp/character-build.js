@@ -52,6 +52,24 @@ function make_skill_tr(skill) {
     $('.skill_value', $x).addClass(skill + "_value");
     $('.skill_value', $x).text(info.start);
     $('.benefits_div', $x).addClass(skill + "_benefits_div");
+
+    var len = 0;
+    if (info.entries)
+        len = info.entries.length;
+    var $bendiv = $('.benefits_div', $x);
+    for (var i = 0; i < len; i++) {
+        if (!info.entries[i].src)
+            info.entries[i].src = "images/" + info.entries[i].name + ".png";
+        $bendiv.append(make_entry_item(info.entries[i]));
+    }
+    return $x;
+}
+
+function make_entry_item(entry) {
+    var $x = $('<span class="entry_item" entry_level="0"><img src="" title="" class="entry_icon"></span>');
+    $('.entry_icon', $x).attr('src', entry.src);
+    $('.entry_icon', $x).attr('title', entry.display);
+    $('.entry_item', $x).attr('entry_level', entry.level);
     return $x;
 }
 
