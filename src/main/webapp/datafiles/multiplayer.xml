@@ -26,9 +26,59 @@
         <skill name="light" start="0" display="Light" essence="Divine Favor" />
     </category>
     <listing skill="dagger">
-        <spell name="daggermastery1" display="Dagger Mastery 1" level="2" cost="2">
-        </spell>
-        <spell name="throwingknife" display="Throwing Knife" level="4" cost="1">
-        </spell>
+        <spell name="daggermastery1" display="Dagger Mastery 1" level="2" cost="2"> </spell>
+        <spell name="throwingknife" display="Throwing Knife" level="4" cost="1"> </spell>
+        <spell name="puffofsmoke" display="Puff of Smoke" level="6" cost="1"> </spell>
+        <spell name="daggermastery2" display="Dagger Mastery 2" level="8" cost="2"> </spell>
+        <spell name="cutpurse" display="Cut Purse" level="8" cost="2"> </spell>
+        <spell name="bomb" display="Bomb" level="10" cost="1"> </spell>
+        <spell name="webtrap" display="Web Trap" level="12" cost="1"> </spell>
+        <spell name="daggermastery3" display="Dagger Mastery 3" level="14" cost="2"> </spell>
+    </listing>
+    <listing skill="mace">
+        <spell name="macemastery1" display="Mace Mastery 1" level="2" cost="2"> </spell>
+        <spell name="charge" display="Charge" level="4" cost="1"> </spell>
+        <spell name="wrath" display="Wrath" level="6" cost="2"> </spell>
+        <spell name="macemastery2" display="Mace Mastery 2" level="8" cost="2"> </spell>
+        <spell name="tremor" display="Tremor" level="10" cost="2"> </spell>
+        <spell name="justice" display="Justice" level="12" cost="2"> </spell>
+        <spell name="macemastery3" display="Mace Mastery 3" level="14" cost="2"> </spell>
+    </listing>
+    <listing skill="axe">
+        <spell name="axemastery1" display="Axe Mastery 1" level="2" cost="2"> </spell>
+        <spell name="enrage" display="Enrage" level="4" cost="2"> </spell>
+        <spell name="ghostaxe" display="Ghost Axe" level="6" cost="2"> </spell>
+        <spell name="axemastery2" display="Axe Mastery 2" level="8" cost="2"> </spell>
+        <spell name="battlecry" display="Battlecry" level="10" cost="2"> </spell>
+        <spell name="axeecution" display="Axe-Ecution" level="12" cost="2"> </spell>
+        <spell name="axemastery3" display="Axe Mastery 3" level="14" cost="2"> </spell>
+    </listing>
+    <listing skill="polearm">
+        <spell name="polearmmastery1" display="Polearm Mastery 1" level="2" cost="2"> </spell>
+        <spell name="javelin" display="Javelin" level="4" cost="1"> </spell>
+        <spell name="breakthrough" display="Breakthrough" level="6" cost="1"> </spell>
+        <spell name="polearmmastery2" display="Polearm Mastery 2" level="8" cost="2"> </spell>
+        <spell name="moveout" display="Move Out" level="10" cost="2"> </spell>
+        <spell name="extraordinaryscope" display="Extraordinary Scope" level="12" cost="3"> </spell>
+        <spell name="polearmmastery3" display="Polearm Mastery 3" level="14" cost="2"> </spell>
+    </listing>
+    <listing skill="sword">
+        <spell name="swordmastery1" display="Sword Mastery 1" level="2" cost="2"> </spell>
+        <spell name="lunge" display="Lunge" level="4" cost="1"> </spell>
+        <spell name="criticalstrike" display="Critical Strike" level="6" cost="1"> </spell>
+        <spell name="swordmastery2" display="Sword Mastery 2" level="8" cost="2"> </spell>
+        <spell name="windcut" display="Wind Cut" level="10" cost="1"> </spell>
+        <spell name="parrywall" display="Parry Wall" level="12" cost="2"> </spell>
+        <spell name="swordmastery3" display="Sword Mastery 3" level="14" cost="2"> </spell>
+    </listing>
+    <listing skill="bow">
+        <spell name="bowmastery1" display="Bow Mastery 1" level="2" cost="2"> </spell>
+        <spell name="poisonarrows" display="Poison Arrows" level="4" cost="1"> </spell>
+        <spell name="spiritarrows" display="Spirit Arrows" level="6" cost="1"> </spell>
+        <spell name="bowmastery2" display="Bow Mastery 2" level="8" cost="2"> </spell>
+        <spell name="splitshot" display="Split Shot" level="10" cost="2"> </spell>
+        <spell name="tripleshot" display="Triple Shot" level="12" cost="2"> </spell>
+        <spell name="bowmastery3" display="Bow Mastery 3" level="14" cost="2"> </spell>
+        <spell name="microexplosivearrows" display="Microexplosive Arrows" level="16" cost="3"> </spell>
     </listing>
 </dataset>
