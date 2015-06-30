@@ -29,7 +29,10 @@ public class Skill implements Jsonable
             job.add("name", name);
         else
             job.addNull("name");
-        job.add("start", start);
+        if (start != Integer.MIN_VALUE)
+            job.add("start", start);
+        else
+            job.addNull("start");
         if (display != null)
             job.add("display", display);
         else

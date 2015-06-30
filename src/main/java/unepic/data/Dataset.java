@@ -23,7 +23,10 @@ public class Dataset implements Jsonable
     public JsonObjectBuilder buildJSON(JsonBuilderFactory factory)
     {
         JsonObjectBuilder job = factory.createObjectBuilder();
-        job.add("name", name);
+        if (name != null)
+            job.add("name", name);
+        else
+            job.addNull("name");
 
         JsonArrayBuilder jab = factory.createArrayBuilder();
         for (SkillCategory category : categories)
