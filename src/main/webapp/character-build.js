@@ -52,6 +52,7 @@ function make_skill_tr(skill) {
     $('.skill_value', $x).addClass(skill + "_value");
     $('.skill_value', $x).text(info.start);
     $('.benefits_div', $x).addClass(skill + "_benefits_div");
+    $x.addClass(skill + '_allocation_row');
 
     var len = 0;
     if (info.entries)
@@ -62,6 +63,8 @@ function make_skill_tr(skill) {
             info.entries[i].src = "images/" + info.entries[i].name + ".png";
         $bendiv.append(make_entry_item(info.entries[i]));
     }
+
+    update_benefits(info.start, $x);
     return $x;
 }
 
@@ -69,16 +72,35 @@ function make_entry_item(entry) {
     var $x = $('<span class="entry_item" entry_level="0"><img src="" title="" class="entry_icon"></span>');
     $('.entry_icon', $x).attr('src', entry.src);
     $('.entry_icon', $x).attr('title', entry.display);
-    $('.entry_item', $x).attr('entry_level', entry.level);
+    $x.attr('entry_level', entry.level);
     return $x;
+}
+
+function update_benefits(value, $container) {
+    $('.entry_item', $container).each(function() {
+        var req_level = parseInt($(this).attr('entry_level'));
+        if (req_level > value)
+            $(this).hide();
+        else
+            $(this).show();
+    });
+}
+
+function set_value(id, value, update)
+{
+    update = (typeof update !== 'undefined') ?  update : true;
+    $container = $('.' + id + '_allocation_row');
+    $('.skill_value', $container).text(value);
+    update_benefits(value, $container);
+    if (update)
+        updateTotal();
 }
 
 function plusClicked(id) {
     var tag = "." + id + "_value"
     var value = parseInt($(tag).text());
     if (value < level) {
-        $(tag).text(value + 1);
-        updateTotal();
+        set_value(id, value + 1);
     }
 }
 
@@ -86,8 +108,7 @@ function minusClicked(id) {
     var tag = "." + id + "_value"
     var value = parseInt($(tag).text());
     if (value > Dataset.info[id].start) {
-        $(tag).text(value - 1);
-        updateTotal();
+        set_value(id, value - 1);
     }
 }
 
@@ -114,6 +135,7 @@ function updateTotal() {
         if (value > level) {
             $(this).text(level);
             value = level;
+            update_benefits(value, $(this).parents('.allocation_row'));
         }
         remaining -= value;
     });
