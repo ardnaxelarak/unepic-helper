@@ -48,7 +48,7 @@
                             <a class="plus_btn ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
                         </div>
                     </td>
-                    <td class="padded">
+                    <td class="benefits_col">
                         <div class="benefits_div">
                         </div>
                     </td>
