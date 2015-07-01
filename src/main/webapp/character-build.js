@@ -130,7 +130,7 @@ function levelPlusClicked() {
 
 function updateTotal() {
     var remaining = 5 + 6 * level;
-    $(".skill_value").each(function() {
+    $(".allocation_row:not(.template) .skill_value").each(function() {
         var value = parseInt($(this).text());
         if (value > level) {
             $(this).text(level);
