@@ -28,9 +28,10 @@ div.no-pad {
 img.entry_icon {
     width: 40px;
     height: 40px;
+    margin: 1px;
 }
 
 td.benefits_col {
-    height: 41px;
+    height: 43px;
     padding: 0 10px;
 }
