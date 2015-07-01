@@ -60,7 +60,7 @@ function make_skill_tr(skill) {
     var $bendiv = $('.benefits_div', $x);
     for (var i = 0; i < len; i++) {
         if (!info.entries[i].src)
-            info.entries[i].src = "images/" + info.entries[i].name + ".png";
+            info.entries[i].src = "images/" + info.entries[i].type + "/" + info.entries[i].name + ".png";
         $bendiv.append(make_entry_item(info.entries[i]));
     }
 
