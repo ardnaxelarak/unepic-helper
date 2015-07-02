@@ -35,3 +35,7 @@ td.benefits_col {
     height: 43px;
     padding: 0 10px;
 }
+
+tr.template {
+    display: none;
+}
