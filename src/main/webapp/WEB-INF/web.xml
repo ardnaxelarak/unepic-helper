@@ -21,6 +21,15 @@
     <url-pattern>/data</url-pattern>
 </servlet-mapping>
 
+<servlet>
+    <servlet-name>SaveBuildServlet</servlet-name>
+    <servlet-class>unepic.SaveBuildServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SaveBuildServlet</servlet-name>
+    <url-pattern>/character/save</url-pattern>
+</servlet-mapping>
+
 <welcome-file-list>
     <welcome-file>character.jsp</welcome-file>
 </welcome-file-list>
