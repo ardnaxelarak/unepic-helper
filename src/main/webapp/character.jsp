@@ -23,6 +23,20 @@
     <div data-role="header">
         <h1>Character Build</h1>
     </div>
+<%
+    UserService userService = UserServiceFactory.getUserService();
+    User user = userService.getCurrentUser();
+    if (user != null) {
+        pageContext.setAttribute("user", user);
+%>
+        <p>Welcome, ${fn:escapeXml(user.nickname)}! (<a href="<%= userService.createLogoutURL(request.getRequestURI()) %>">sign out</a>)</p>
+<%
+    } else {
+%>
+        <p><a href="<%= userService.createLoginURL(request.getRequestURI()) %>">Sign in</a> to save character builds.</p>
+<%
+    }
+%>
     <div class="level_div" data-role="controlgroup" data-type="horizontal" data-mini="true">
         <a class="ui-btn ui-corner-all">Character Level: </a>
         <a onclick="levelMinusClicked();" class="ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
