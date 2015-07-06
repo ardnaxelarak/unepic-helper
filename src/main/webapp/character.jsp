@@ -7,12 +7,20 @@
 
 <%
     String[] categories = new String[] {"daggers", "swords", "maces", "axes", "polearms", "bows", "staves", "wands", "constitution", "armor", "robes", "fire", "frost", "healing", "alteration", "arcane", "mental", "protection", "light"};
+    UserService userService = UserServiceFactory.getUserService();
+    User user = userService.getCurrentUser();
 %>
 
 <html>
 <head>
     <link type="text/css" rel="stylesheet" href="webjars/jquery-mobile/1.4.5/jquery.mobile.min.css" />
     <link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
+<% if (user != null) { %>
+    <script>
+        var userId="<%= user.getUserId() %>";
+        var username="<%= user.getNickname() %>";
+    </script>
+<% } %>
     <script src="webjars/jquery/2.1.4/jquery.min.js"> </script>
     <script src="webjars/jquery-mobile/1.4.5/jquery.mobile.min.js"> </script>
     <script src="character-build.js"> </script>
@@ -24,8 +32,6 @@
         <h1>Character Build</h1>
     </div>
 <%
-    UserService userService = UserServiceFactory.getUserService();
-    User user = userService.getCurrentUser();
     if (user != null) {
         pageContext.setAttribute("user", user);
 %>
@@ -37,6 +43,9 @@
 <%
     }
 %>
+    <div class="stored_div">
+        <a onclick="saveBuild();" class="ui-btn ui-corner-all ui-icon-action ui-btn-icon-left ui-btn-inline">Save</a>
+    </div>
     <div class="level_div" data-role="controlgroup" data-type="horizontal" data-mini="true">
         <a class="ui-btn ui-corner-all">Character Level: </a>
         <a onclick="levelMinusClicked();" class="ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>

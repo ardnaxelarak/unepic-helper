@@ -51,6 +51,7 @@ function make_skill_tr(skill) {
     $('.plus_btn', $x).attr('onclick', "plusClicked('" + skill + "');");
     $('.skill_value', $x).addClass(skill + "_value");
     $('.skill_value', $x).text(info.start);
+    $('.skill_value', $x).attr('skill_name', skill);
     $('.benefits_div', $x).addClass(skill + "_benefits_div");
     $x.addClass(skill + '_allocation_row');
 
@@ -147,4 +148,31 @@ function updateTotal() {
 
     $(".remaining_points").text(remaining);
     $(".hp_total").text(hptotal);
+}
+
+function getBuildJson() {
+    var X = {};
+
+    $(".allocation_row:not(.template) .skill_value").each(function() {
+        var value = parseInt($(this).text());
+        var skill = $(this).attr('skill_name');
+        X[skill] = value;
+    });
+
+    return JSON.stringify(X);
+}
+
+function saveBuild() {
+    var onSuccess = function(data) {
+    };
+
+    $.ajax({
+        type: "POST",
+        url: "character/save?user=" + userId + "&character=default&level=" + level,
+        data: getBuildJson(),
+        contentType: "application/json; chaset=utf-8",
+        dataType: "json",
+        success: onSuccess,
+        error: handle_ajax_error
+    });
 }
