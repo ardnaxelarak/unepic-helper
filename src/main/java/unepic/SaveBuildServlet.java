@@ -17,10 +17,9 @@ public class SaveBuildServlet extends HttpServlet
     public void doPost(HttpServletRequest req, HttpServletResponse resp)
         throws IOException
     {
-        String userId = req.getParameter("user");
         String charname = req.getParameter("character");
         String levelStr = req.getParameter("level");
-        if (userId == null || charname == null || levelStr == null) {
+        if (charname == null || levelStr == null) {
             resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
@@ -32,30 +31,14 @@ public class SaveBuildServlet extends HttpServlet
             resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
-        doPostSave(userId, charname, level, req, resp);
+        doPostSave(charname, level, req, resp);
     }
 
-	static String getRequestContent(HttpServletRequest req)
-		throws IOException
-	{
-		StringBuilder sb = new StringBuilder();
-		Reader r = req.getReader();
-		char [] cbuf = new char[1024];
-		int nread;
-
-		while ( (nread = r.read(cbuf)) != -1 )
-		{
-			sb.append(cbuf, 0, nread);
-		}
-
-		return sb.toString();
-	}
-
-    public void doPostSave(String userId, String charname, int level,
+    public void doPostSave(String charname, int level,
         HttpServletRequest req, HttpServletResponse resp)
         throws IOException
     {
-        log.info("Saving character " + charname + ", level " + level + ", for user ID " + userId);
+        log.info("Saving character " + charname + ", level " + level);
 
         String content = getRequestContent(req);
 
@@ -65,8 +48,9 @@ public class SaveBuildServlet extends HttpServlet
         Transaction txn = datastore.beginTransaction();
 
         try {
-            Key userKey = getUserKey(userId);
-            Entity ent = new Entity("Build", userKey);
+            Key userKey = getUserKey();
+            String keyHash = sha256(charname + level);
+            Entity ent = new Entity("Build", keyHash, userKey);
             ent.setProperty("character", charname);
             ent.setProperty("level", level);
             ent.setProperty("content", new Text(content));
