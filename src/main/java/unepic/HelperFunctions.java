@@ -4,12 +4,14 @@ import com.google.appengine.api.datastore.*;
 import com.google.appengine.api.users.*;
 import org.apache.commons.codec.digest.DigestUtils;
 import java.io.*;
+import javax.json.*;
 import javax.servlet.http.*;
 
 public class HelperFunctions
 {
     private static DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
     private static UserService userService = UserServiceFactory.getUserService();
+    private static JsonReaderFactory jrFactory = Json.createReaderFactory(null);
 
     private HelperFunctions()
     {
@@ -63,5 +65,13 @@ public class HelperFunctions
             datastore.put(userEnt);
         }
         return userKey;
+    }
+
+    public static JsonStructure getJson(String text)
+    {
+        JsonReader reader = jrFactory.createReader(new StringReader(text));
+        JsonStructure structure = reader.read();
+        reader.close();
+        return structure;
     }
 }
