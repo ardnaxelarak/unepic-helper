@@ -15,12 +15,15 @@
 <head>
     <link type="text/css" rel="stylesheet" href="webjars/jquery-mobile/1.4.5/jquery.mobile.min.css" />
     <link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
-<% if (user != null) { %>
     <script>
-        var userId="<%= user.getUserId() %>";
-        var username="<%= user.getNickname() %>";
-    </script>
+<% if (user != null) { %>
+        var userId = "<%= user.getUserId() %>";
+        var username = "<%= user.getNickname() %>";
+<% } else { %>
+        var userId = null;
+        var username = null;
 <% } %>
+    </script>
     <script src="webjars/jquery/2.1.4/jquery.min.js"> </script>
     <script src="webjars/jquery-mobile/1.4.5/jquery.mobile.min.js"> </script>
     <script src="character-build.js"> </script>
@@ -28,6 +31,7 @@
 
 <body>
 <div data-role="page" class="type-interior">
+<div class="wrapper">
     <div data-role="header">
         <h1>Character Build</h1>
     </div>
@@ -44,7 +48,20 @@
     }
 %>
     <div class="stored_div">
-        <a onclick="saveBuild();" class="ui-btn ui-corner-all ui-icon-action ui-btn-icon-left ui-btn-inline">Save</a>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+            <select class="saved_chars_select" onchange="update_levels()">
+                <option class="blank_char" value="">Choose character:</option>
+            </select>
+            <select class="saved_levels_select" onchange="level_selected()">
+                <option class="blank_level" value="">Choose level:</option>
+            </select>
+        </fieldset>
+        <input class="char_name_text" value="" placeholder="Character Name" type="text" />
+        <span class="saved_text"></span>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+            <a onclick="saveBuild();" class="save_btn ui-btn ui-corner-all ui-icon-action ui-btn-icon-left ui-btn-inline">Save</a>
+            <a onclick="saveBuildAs();" class="save_as_btn ui-btn ui-corner-all ui-icon-action ui-btn-icon-left ui-btn-inline">Save As</a>
+        </fieldset>
     </div>
     <div class="level_div" data-role="controlgroup" data-type="horizontal" data-mini="true">
         <a class="ui-btn ui-corner-all">Character Level: </a>
@@ -83,6 +100,7 @@
         <a class="ui-btn ui-corner-all">Remaining Points:</a>
         <a class="remaining_points ui-btn ui-corner-all">1</a>
     </div>
+</div>
 </div>
 </body>
 </html>

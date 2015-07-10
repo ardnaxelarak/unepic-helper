@@ -6,6 +6,14 @@ table {
     border-collapse: collapse;
 }
 
+div.wrapper {
+    width: 800px;
+}
+
+div.stored_div {
+    width: 50%;
+}
+
 th.right {
     text-align: right;
     padding: 0 10px;
@@ -38,4 +46,8 @@ td.benefits_col {
 
 tr.template {
     display: none;
+}
+
+span.saving_text {
+    color: red;
 }

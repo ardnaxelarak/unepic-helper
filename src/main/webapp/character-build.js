@@ -1,5 +1,6 @@
 var level;
 var Dataset;
+var Builds;
 
 function handle_ajax_error(jqx, status, errMsg) {
     console.log('Ajax error: ' + jqx.status + ' ' + status + ' ' + errMsg);
@@ -24,6 +25,13 @@ function load_dataset(name) {
 $(document).ready(function() {
     level = 5;
     load_dataset("multiplayer");
+    if (userId) {
+        load_builds();
+        $('.stored_div').show();
+        $('save_btn').prop("disabled", true);
+    } else {
+        $('.stored_div').hide();
+    }
 });
 
 function init_allocation_body() {
@@ -164,15 +172,100 @@ function getBuildJson() {
 
 function saveBuild() {
     var onSuccess = function(data) {
+        $('.saved_text').text("Saved successfully.");
+        load_builds();
     };
 
+    var curchar = $('.saved_chars_select :selected').val();
+    if (curchar) {
+        $.ajax({
+            type: "POST",
+            url: "character/save?character=" + curchar + "&level=" + level,
+            data: getBuildJson(),
+            contentType: "application/json; chaset=utf-8",
+            dataType: "json",
+            success: onSuccess,
+            error: handle_ajax_error
+        });
+    } else {
+        $('.saved_text').text("No character currently selected.");
+    }
+}
+
+function saveBuildAs() {
+    var onSuccess = function(data) {
+        $('.saved_text').text("Saved successfully.");
+        load_builds();
+    };
+
+    var curchar = $('.char_name_text').val();
+    if (!curchar) {
+        $('.saved_text').text("Please enter a character name.");
+    } else if (Builds[curchar]) {
+        $('.saved_text').text("That character already exists.");
+    } else {
+        $.ajax({
+            type: "POST",
+            url: "character/save?character=" + curchar + "&level=" + level,
+            data: getBuildJson(),
+            contentType: "application/json; chaset=utf-8",
+            dataType: "json",
+            success: onSuccess,
+            error: handle_ajax_error
+        });
+    }
+}
+
+function load_builds() {
+    var onSuccess = function(data) {
+        Builds = data;
+        console.log(Builds);
+        $chars = $('.saved_chars_select');
+        $(':not(.blank_char)', $chars).remove();
+        $.each(Builds, function(key, value) {
+            $chars.append('<option value="' + key + '">' + key + '</option>');
+        });
+    }
+
     $.ajax({
-        type: "POST",
-        url: "character/save?user=" + userId + "&character=default&level=" + level,
-        data: getBuildJson(),
-        contentType: "application/json; chaset=utf-8",
+        type: "GET",
+        url: "character/load",
         dataType: "json",
         success: onSuccess,
         error: handle_ajax_error
     });
+}
+
+function update_levels() {
+    $levels = $('.saved_levels_select');
+    $levels.val("");
+    $(':not(.blank_level)', $levels).remove();
+    var curchar = $('.saved_chars_select :selected').val();
+    console.log(curchar);
+    console.log(Builds[curchar]);
+    if (curchar) {
+        $.each(Builds[curchar], function(key, value) {
+            $levels.append('<option value="' + key + '">' + key + '</option>');
+        });
+        $('save_btn').prop("disabled", false);
+    } else {
+        $('save_btn').prop("disabled", true);
+    }
+}
+
+function level_selected() {
+    var curchar = $('.saved_chars_select :selected').val();
+    var curlevel = $('.saved_levels_select :selected').val();
+    console.log("curchar: " + curchar + ", curlevel: " + curlevel);
+    if (curchar && curlevel) {
+        console.log(Builds[curchar][curlevel]);
+        loadBuild(Builds[curchar][curlevel]);
+    }
+}
+
+function loadBuild(object) {
+    $.each(object, function(key, value) {
+        set_value(key, value, false);
+    });
+    updateTotal();
 }
