@@ -227,6 +227,8 @@ function load_builds() {
         });
     }
 
+    Builds = {};
+
     $.ajax({
         type: "GET",
         url: "character/load",
@@ -259,6 +261,8 @@ function level_selected() {
     console.log("curchar: " + curchar + ", curlevel: " + curlevel);
     if (curchar && curlevel) {
         console.log(Builds[curchar][curlevel]);
+        level = parseInt(curlevel);
+        $(".level_value").text(level);
         loadBuild(Builds[curchar][curlevel]);
     }
 }
