@@ -220,11 +220,12 @@ function load_builds() {
     var onSuccess = function(data) {
         Builds = data;
         console.log(Builds);
-        $chars = $('.saved_chars_select');
+        $chars = $('select.saved_chars_select');
         $(':not(.blank_char)', $chars).remove();
         $.each(Builds, function(key, value) {
             $chars.append('<option value="' + key + '">' + key + '</option>');
         });
+        $chars.selectmenu("refresh");
     }
 
     Builds = {};
@@ -239,10 +240,10 @@ function load_builds() {
 }
 
 function update_levels() {
-    $levels = $('.saved_levels_select');
+    $levels = $('select.saved_levels_select');
     $levels.val("");
     $(':not(.blank_level)', $levels).remove();
-    var curchar = $('.saved_chars_select :selected').val();
+    var curchar = $('select.saved_chars_select :selected').val();
     console.log(curchar);
     console.log(Builds[curchar]);
     if (curchar) {
@@ -253,11 +254,12 @@ function update_levels() {
     } else {
         $('save_btn').prop("disabled", true);
     }
+    $levels.selectmenu("refresh");
 }
 
 function level_selected() {
-    var curchar = $('.saved_chars_select :selected').val();
-    var curlevel = $('.saved_levels_select :selected').val();
+    var curchar = $('select.saved_chars_select :selected').val();
+    var curlevel = $('select.saved_levels_select :selected').val();
     console.log("curchar: " + curchar + ", curlevel: " + curlevel);
     if (curchar && curlevel) {
         console.log(Builds[curchar][curlevel]);
