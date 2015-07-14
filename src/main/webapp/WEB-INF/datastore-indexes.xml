@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes autoGenerate="true">
+    <datastore-index kind="Build" ancestor="true" source="manual">
+        <property name="character" direction="asc"/>
+        <property name="level" direction="asc"/>
+    </datastore-index>
+</datastore-indexes>
