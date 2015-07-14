@@ -26,7 +26,7 @@ $(document).ready(function() {
     level = 5;
     load_dataset("multiplayer");
     if (userId) {
-        load_builds();
+        load_builds("", "");
         $('.stored_div').show();
         $('save_btn').prop("disabled", true);
     } else {
@@ -173,10 +173,11 @@ function getBuildJson() {
 function saveBuild() {
     var onSuccess = function(data) {
         $('.saved_text').text("Saved successfully.");
-        load_builds();
+        var curchar = $('select.saved_chars_select :selected').val();
+        load_builds(curchar, level);
     };
 
-    var curchar = $('.saved_chars_select :selected').val();
+    var curchar = $('select.saved_chars_select :selected').val();
     if (curchar) {
         $.ajax({
             type: "POST",
@@ -195,7 +196,8 @@ function saveBuild() {
 function saveBuildAs() {
     var onSuccess = function(data) {
         $('.saved_text').text("Saved successfully.");
-        load_builds();
+        var curchar = $('.char_name_text').val();
+        load_builds(curchar, level);
     };
 
     var curchar = $('.char_name_text').val();
@@ -216,7 +218,7 @@ function saveBuildAs() {
     }
 }
 
-function load_builds() {
+function load_builds(curchar, curlevel) {
     var onSuccess = function(data) {
         Builds = data;
         console.log(Builds);
@@ -225,7 +227,11 @@ function load_builds() {
         $.each(Builds, function(key, value) {
             $chars.append('<option value="' + key + '">' + key + '</option>');
         });
+        if (curchar) {
+            $chars.val(curchar);
+        }
         $chars.selectmenu("refresh");
+        update_levels(curlevel);
     }
 
     Builds = {};
@@ -239,9 +245,8 @@ function load_builds() {
     });
 }
 
-function update_levels() {
+function update_levels(curlevel) {
     $levels = $('select.saved_levels_select');
-    $levels.val("");
     $(':not(.blank_level)', $levels).remove();
     var curchar = $('select.saved_chars_select :selected').val();
     console.log(curchar);
@@ -253,6 +258,9 @@ function update_levels() {
         $('save_btn').prop("disabled", false);
     } else {
         $('save_btn').prop("disabled", true);
+    }
+    if (curlevel) {
+        $levels.val(curlevel);
     }
     $levels.selectmenu("refresh");
 }
