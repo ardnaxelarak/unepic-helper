@@ -167,4 +167,10 @@
         <entry category="unique" name="gelita" display="Gelita" level="6" />
         <entry category="unique" name="incendya" display="Incendya" level="8" />
     </listing>
+    <listing skill="staff">
+        <entry category="unique" name="toykey" display="Toy Key" level="1" />
+        <entry category="unique" name="masterkey" display="Master Key" level="10" />
+        <entry category="unique" name="demonicstaff" display="Demonic Staff" level="13" />
+        <entry category="unique" name="cubanbstaff" display="CubanB's Staff" level="15" />
+    </listing>
 </dataset>
