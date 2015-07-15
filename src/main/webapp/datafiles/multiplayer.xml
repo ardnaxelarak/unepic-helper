@@ -173,4 +173,29 @@
         <entry category="unique" name="demonicstaff" display="Demonic Staff" level="13" />
         <entry category="unique" name="cubanbstaff" display="CubanB's Staff" level="15" />
     </listing>
+    <listing skill="robe">
+        <entry category="levelled" name="lightsuitechampion" display="Light Suite of the Champion" level="3" />
+        <entry category="levelled" name="alchemistrobe" display="Great Robe of the Alchemist" level="11" />
+        <entry category="unique" name="demonicrobe" display="Peices of Demonic Armor" level="13" />
+    </listing>
+    <listing skill="armor">
+        <entry category="unique" name="baller" display="Baller's Armor" level="0" />
+        <entry category="levelled" name="scientistclothes" display="Scientist Clothes" level="4" />
+        <entry category="unique" name="luxor" display="Blessed Platemail of Luxor" level="7" />
+        <entry category="levelled" name="firesnakearmor" display="Giant Fire Snake Scale Armor" level="8" />
+        <entry category="levelled" name="cobraarmor" display="Giant Cobra Scale Armor" level="8" />
+        <entry category="levelled" name="scalearmor" display="Scale Armor" level="9" />
+        <entry category="levelled" name="necromancerclothes" display="Necromancer Clothes" level="10" />
+        <entry category="levelled" name="platearmor" display="Plate Armor" level="11" />
+        <entry category="unique" name="rangerdeathwearer" display="Ranger Deathwearer" level="12" />
+        <entry category="levelled" name="bronzebreastplate" display="Bronze Breastplate" level="12" />
+        <entry category="levelled" name="firedragonarmor" display="Giant Fire Dragon Scale Armor" level="12" />
+        <entry category="levelled" name="seadragonarmor" display="Giant Sea Dragon Scale Armor" level="12" />
+        <entry category="levelled" name="blackdragonarmor" display="Giant Black Dragon Scale Armor" level="12" />
+        <entry category="unique" name="cecil" display="Blessed Thornmail of Cecil" level="14" />
+        <entry category="levelled" name="silverbreastplate" display="Silver Breastplate" level="14" />
+        <entry category="unique" name="raak" display="Blessed Armor of Raak" level="15" />
+        <entry category="unique" name="golem" display="Golem Armor" level="16" />
+        <entry category="levelled" name="goldbreastplate" display="Gold Breastplate" level="16" />
+    </listing>
 </dataset>
