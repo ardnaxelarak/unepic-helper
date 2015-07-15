@@ -160,4 +160,11 @@
         <entry category="spell" name="divinefury" display="Divine Fury" level="10" cost="5" duration="0" />
         <entry category="spell" name="exorcise" display="Exorcise" level="12" cost="10" duration="0" />
     </listing>
+    <listing skill="wand">
+        <entry category="unique" name="arkanita" display="Arkanita" level="4" />
+        <entry category="unique" name="venomia" display="Venomia" level="4" />
+        <entry category="unique" name="pyrita" display="Pyrita" level="6" />
+        <entry category="unique" name="gelita" display="Gelita" level="6" />
+        <entry category="unique" name="incendya" display="Incendya" level="8" />
+    </listing>
 </dataset>
