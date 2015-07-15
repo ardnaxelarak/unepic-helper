@@ -26,138 +26,138 @@
         <skill name="light" start="0" display="Light" essence="Divine Favor" />
     </category>
     <listing skill="dagger">
-        <spell name="daggermastery1" display="Dagger Mastery 1" level="2" cost="2" duration="-1" />
-        <spell name="throwingknife" display="Throwing Knife" level="4" cost="1" duration="0" />
-        <spell name="puffofsmoke" display="Puff of Smoke" level="6" cost="1" />
-        <spell name="daggermastery2" display="Dagger Mastery 2" level="8" cost="2" duration="-1" />
-        <spell name="cutpurse" display="Cut Purse" level="8" cost="2" duration="0" />
-        <spell name="bomb" display="Bomb" level="10" cost="1" duration="0" />
-        <spell name="webtrap" display="Web Trap" level="12" cost="1" />
-        <spell name="daggermastery3" display="Dagger Mastery 3" level="14" cost="2" duration="-1" />
+        <entry category="spell" name="daggermastery1" display="Dagger Mastery 1" level="2" cost="2" duration="-1" />
+        <entry category="spell" name="throwingknife" display="Throwing Knife" level="4" cost="1" duration="0" />
+        <entry category="spell" name="puffofsmoke" display="Puff of Smoke" level="6" cost="1" />
+        <entry category="spell" name="daggermastery2" display="Dagger Mastery 2" level="8" cost="2" duration="-1" />
+        <entry category="spell" name="cutpurse" display="Cut Purse" level="8" cost="2" duration="0" />
+        <entry category="spell" name="bomb" display="Bomb" level="10" cost="1" duration="0" />
+        <entry category="spell" name="webtrap" display="Web Trap" level="12" cost="1" />
+        <entry category="spell" name="daggermastery3" display="Dagger Mastery 3" level="14" cost="2" duration="-1" />
     </listing>
     <listing skill="sword">
-        <spell name="swordmastery1" display="Sword Mastery 1" level="2" cost="2" duration="-1" />
-        <spell name="lunge" display="Lunge" level="4" cost="1" duration="0" />
-        <spell name="criticalstrike" display="Critical Strike" level="6" cost="1" />
-        <spell name="swordmastery2" display="Sword Mastery 2" level="8" cost="2" duration="-1" />
-        <spell name="windcut" display="Wind Cut" level="10" />
-        <spell name="parrywall" display="Parry Wall" level="12" />
-        <spell name="swordmastery3" display="Sword Mastery 3" level="14" cost="2" duration="-1" />
+        <entry category="spell" name="swordmastery1" display="Sword Mastery 1" level="2" cost="2" duration="-1" />
+        <entry category="spell" name="lunge" display="Lunge" level="4" cost="1" duration="0" />
+        <entry category="spell" name="criticalstrike" display="Critical Strike" level="6" cost="1" />
+        <entry category="spell" name="swordmastery2" display="Sword Mastery 2" level="8" cost="2" duration="-1" />
+        <entry category="spell" name="windcut" display="Wind Cut" level="10" />
+        <entry category="spell" name="parrywall" display="Parry Wall" level="12" />
+        <entry category="spell" name="swordmastery3" display="Sword Mastery 3" level="14" cost="2" duration="-1" />
     </listing>
     <listing skill="mace">
-        <spell name="macemastery1" display="Mace Mastery 1" level="2" cost="2" duration="-1" />
-        <spell name="charge" display="Charge" level="4" cost="1" duration="0" />
-        <spell name="wrath" display="Wrath" level="6" cost="2" duration="0" />
-        <spell name="macemastery2" display="Mace Mastery 2" level="8" cost="2" duration="-1" />
-        <spell name="tremor" display="Tremor" level="10" cost="2" duration="0" />
-        <spell name="justice" display="Justice" level="12" cost="2" />
-        <spell name="macemastery3" display="Mace Mastery 3" level="14" cost="2" duration="-1" />
+        <entry category="spell" name="macemastery1" display="Mace Mastery 1" level="2" cost="2" duration="-1" />
+        <entry category="spell" name="charge" display="Charge" level="4" cost="1" duration="0" />
+        <entry category="spell" name="wrath" display="Wrath" level="6" cost="2" duration="0" />
+        <entry category="spell" name="macemastery2" display="Mace Mastery 2" level="8" cost="2" duration="-1" />
+        <entry category="spell" name="tremor" display="Tremor" level="10" cost="2" duration="0" />
+        <entry category="spell" name="justice" display="Justice" level="12" cost="2" />
+        <entry category="spell" name="macemastery3" display="Mace Mastery 3" level="14" cost="2" duration="-1" />
     </listing>
     <listing skill="axe">
-        <spell name="axemastery1" display="Axe Mastery 1" level="2" cost="2" duration="-1" />
-        <spell name="enrage" display="Enrage" level="4" cost="2" />
-        <spell name="ghostaxe" display="Ghost Axe" level="6" cost="2" />
-        <spell name="axemastery2" display="Axe Mastery 2" level="8" cost="2" duration="-1" />
-        <spell name="battlecry" display="Battle Cry" level="10" cost="2" />
-        <spell name="axeecution" display="Axe-Ecution" level="12" />
-        <spell name="axemastery3" display="Axe Mastery 3" level="14" cost="2" duration="-1" />
+        <entry category="spell" name="axemastery1" display="Axe Mastery 1" level="2" cost="2" duration="-1" />
+        <entry category="spell" name="enrage" display="Enrage" level="4" cost="2" />
+        <entry category="spell" name="ghostaxe" display="Ghost Axe" level="6" cost="2" />
+        <entry category="spell" name="axemastery2" display="Axe Mastery 2" level="8" cost="2" duration="-1" />
+        <entry category="spell" name="battlecry" display="Battle Cry" level="10" cost="2" />
+        <entry category="spell" name="axeecution" display="Axe-Ecution" level="12" />
+        <entry category="spell" name="axemastery3" display="Axe Mastery 3" level="14" cost="2" duration="-1" />
     </listing>
     <listing skill="polearm">
-        <spell name="polearmmastery1" display="Polearm Mastery 1" level="2" cost="2" duration="-1" />
-        <spell name="javelin" display="Javelin" level="4" cost="1" duration="0" />
-        <spell name="breakthrough" display="Breakthrough" level="6" cost="1" duration="0" />
-        <spell name="polearmmastery2" display="Polearm Mastery 2" level="8" cost="2" duration="-1" />
-        <spell name="moveout" display="Move Out" level="10" cost="2" duration="20" />
-        <spell name="extraordinaryscope" display="Extraordinary Scope" level="12" cost="3" duration="-1" />
-        <spell name="polearmmastery3" display="Polearm Mastery 3" level="14" cost="2" duration="-1" />
+        <entry category="spell" name="polearmmastery1" display="Polearm Mastery 1" level="2" cost="2" duration="-1" />
+        <entry category="spell" name="javelin" display="Javelin" level="4" cost="1" duration="0" />
+        <entry category="spell" name="breakthrough" display="Breakthrough" level="6" cost="1" duration="0" />
+        <entry category="spell" name="polearmmastery2" display="Polearm Mastery 2" level="8" cost="2" duration="-1" />
+        <entry category="spell" name="moveout" display="Move Out" level="10" cost="2" duration="20" />
+        <entry category="spell" name="extraordinaryscope" display="Extraordinary Scope" level="12" cost="3" duration="-1" />
+        <entry category="spell" name="polearmmastery3" display="Polearm Mastery 3" level="14" cost="2" duration="-1" />
     </listing>
     <listing skill="bow">
-        <spell name="bowmastery1" display="Bow Mastery 1" level="2" cost="2" duration="-1" />
-        <spell name="poisonarrows" display="Poison Arrows" level="4" cost="1" duration="-1" />
-        <spell name="spiritarrows" display="Spirit Arrows" level="6" cost="1" duration="-1" />
-        <spell name="bowmastery2" display="Bow Mastery 2" level="8" cost="2" duration="-1" />
-        <spell name="splitshot" display="Split Shot" level="10" cost="2" />
-        <spell name="tripleshot" display="Triple Shot" level="12" cost="2" />
-        <spell name="bowmastery3" display="Bow Mastery 3" level="14" cost="2" duration="-1" />
-        <spell name="microexplosivearrows" display="Microexplosive Arrows" level="16" cost="3" duration="-1" />
+        <entry category="spell" name="bowmastery1" display="Bow Mastery 1" level="2" cost="2" duration="-1" />
+        <entry category="spell" name="poisonarrows" display="Poison Arrows" level="4" cost="1" duration="-1" />
+        <entry category="spell" name="spiritarrows" display="Spirit Arrows" level="6" cost="1" duration="-1" />
+        <entry category="spell" name="bowmastery2" display="Bow Mastery 2" level="8" cost="2" duration="-1" />
+        <entry category="spell" name="splitshot" display="Split Shot" level="10" cost="2" />
+        <entry category="spell" name="tripleshot" display="Triple Shot" level="12" cost="2" />
+        <entry category="spell" name="bowmastery3" display="Bow Mastery 3" level="14" cost="2" duration="-1" />
+        <entry category="spell" name="microexplosivearrows" display="Microexplosive Arrows" level="16" cost="3" duration="-1" />
     </listing>
     <listing skill="fire">
-        <spell name="firebolt" display="Firebolt" level="4" cost="1" duration="0" />
-        <spell name="fireball" display="Fire Ball" level="6" cost="8" duration="0" />
-        <spell name="firebreath" display="Fire Breath" level="8" cost="6" duration="0" />
-        <spell name="heataura" display="Heat Aura" level="8" cost="5" />
-        <spell name="improvedfirebolt" display="Improved Firebolt" level="10" cost="3" duration="0" />
-        <spell name="imbuefire" display="Imbue Fire" level="12" cost="15" />
-        <spell name="summonfirespirit" display="Summon Fire Spirit" level="14" cost="20" />
+        <entry category="spell" name="firebolt" display="Firebolt" level="4" cost="1" duration="0" />
+        <entry category="spell" name="fireball" display="Fire Ball" level="6" cost="8" duration="0" />
+        <entry category="spell" name="firebreath" display="Fire Breath" level="8" cost="6" duration="0" />
+        <entry category="spell" name="heataura" display="Heat Aura" level="8" cost="5" />
+        <entry category="spell" name="improvedfirebolt" display="Improved Firebolt" level="10" cost="3" duration="0" />
+        <entry category="spell" name="imbuefire" display="Imbue Fire" level="12" cost="15" />
+        <entry category="spell" name="summonfirespirit" display="Summon Fire Spirit" level="14" cost="20" />
     </listing>
     <listing skill="frost">
-        <spell name="frostbolt" display="Frost Bolt" level="4" cost="1" duration="0" />
-        <spell name="frostbreath" display="Frost Breath" level="6" cost="6" duration="0" />
-        <spell name="coldblast" display="Cold Blast" level="8" cost="2" duration="0" />
-        <spell name="improvedfrostbolt" display="Improved Frost Bolt" level="10" cost="3" duration="0" />
-        <spell name="invokeiceblock" display="Invoke Ice Block" level="12" cost="8" duration="0" />
-        <spell name="imbuecold" display="Imbue Cold" level="12" cost="15" />
-        <spell name="stalactite" display="Stalactite" level="14" cost="2" duration="0" />
+        <entry category="spell" name="frostbolt" display="Frost Bolt" level="4" cost="1" duration="0" />
+        <entry category="spell" name="frostbreath" display="Frost Breath" level="6" cost="6" duration="0" />
+        <entry category="spell" name="coldblast" display="Cold Blast" level="8" cost="2" duration="0" />
+        <entry category="spell" name="improvedfrostbolt" display="Improved Frost Bolt" level="10" cost="3" duration="0" />
+        <entry category="spell" name="invokeiceblock" display="Invoke Ice Block" level="12" cost="8" duration="0" />
+        <entry category="spell" name="imbuecold" display="Imbue Cold" level="12" cost="15" />
+        <entry category="spell" name="stalactite" display="Stalactite" level="14" cost="2" duration="0" />
     </listing>
     <listing skill="healing">
-        <spell name="healing" display="Healing" level="4" cost="3" duration="0" />
-        <spell name="slowpoison" display="Slow Poison" level="6" cost="3" duration="120" />
-        <spell name="regeneration" display="Regeneration" level="6" cost="2" duration="30" />
-        <spell name="poisonreduction" display="Poison Reduction" level="8" cost="5" duration="0" />
-        <spell name="improvedhealing" display="Improved Healing" level="10" cost="6" duration="0" />
-        <spell name="improvedregeneration" display="Improved Regeneration" level="12" cost="10" duration="30" />
-        <spell name="massheal" display="Mass Heal" level="12" cost="10" duration="0" />
-        <spell name="antidote" display="Antidote" level="14" cost="10" duration="0" />
+        <entry category="spell" name="healing" display="Healing" level="4" cost="3" duration="0" />
+        <entry category="spell" name="slowpoison" display="Slow Poison" level="6" cost="3" duration="120" />
+        <entry category="spell" name="regeneration" display="Regeneration" level="6" cost="2" duration="30" />
+        <entry category="spell" name="poisonreduction" display="Poison Reduction" level="8" cost="5" duration="0" />
+        <entry category="spell" name="improvedhealing" display="Improved Healing" level="10" cost="6" duration="0" />
+        <entry category="spell" name="improvedregeneration" display="Improved Regeneration" level="12" cost="10" duration="30" />
+        <entry category="spell" name="massheal" display="Mass Heal" level="12" cost="10" duration="0" />
+        <entry category="spell" name="antidote" display="Antidote" level="14" cost="10" duration="0" />
     </listing>
     <listing skill="mental">
-        <spell name="trapdetection" display="Trap Detection" level="4" cost="1" />
-        <spell name="infravision" display="Infravision" level="4" cost="5" duration="60" />
-        <spell name="telekinesis" display="Telekinesis" level="6" cost="1" duration="0" />
-        <spell name="blind" display="Blind" level="6" cost="1" />
-        <spell name="sleep" display="Sleep" level="8" cost="2" />
-        <spell name="stunning" display="Stunning" level="10" cost="4" />
-        <spell name="seeinvisible" display="See Invisible" level="12" cost="9" duration="120" />
-        <spell name="mentalcontrol" display="Mental Control" level="12" cost="10" />
-        <spell name="brightmind" display="Bright Mind" level="14" cost="10" duration="60" />
+        <entry category="spell" name="trapdetection" display="Trap Detection" level="4" cost="1" />
+        <entry category="spell" name="infravision" display="Infravision" level="4" cost="5" duration="60" />
+        <entry category="spell" name="telekinesis" display="Telekinesis" level="6" cost="1" duration="0" />
+        <entry category="spell" name="blind" display="Blind" level="6" cost="1" />
+        <entry category="spell" name="sleep" display="Sleep" level="8" cost="2" />
+        <entry category="spell" name="stunning" display="Stunning" level="10" cost="4" />
+        <entry category="spell" name="seeinvisible" display="See Invisible" level="12" cost="9" duration="120" />
+        <entry category="spell" name="mentalcontrol" display="Mental Control" level="12" cost="10" />
+        <entry category="spell" name="brightmind" display="Bright Mind" level="14" cost="10" duration="60" />
     </listing>
     <listing skill="arcane">
-        <spell name="arcanewave" display="Arcane Wave" level="4" cost="4" duration="0" />
-        <spell name="latentlife" display="Latent Life" level="6" cost="12" duration="-1" />
-        <spell name="arcanecontrol" display="Arcane Control" level="8" cost="4" duration="0" />
-        <spell name="curseofthedead" display="Curse of the Dead" level="10" cost="4" duration="0" />
-        <spell name="vampireaura" display="Vampire Aura" level="10" cost="20" />
-        <spell name="deadlycloud" display="Deadly Cloud" level="12" cost="6" duration="0" />
-        <spell name="undyingmagic" display="Undying Magic" level="14" cost="15" duration="-1" />
+        <entry category="spell" name="arcanewave" display="Arcane Wave" level="4" cost="4" duration="0" />
+        <entry category="spell" name="latentlife" display="Latent Life" level="6" cost="12" duration="-1" />
+        <entry category="spell" name="arcanecontrol" display="Arcane Control" level="8" cost="4" duration="0" />
+        <entry category="spell" name="curseofthedead" display="Curse of the Dead" level="10" cost="4" duration="0" />
+        <entry category="spell" name="vampireaura" display="Vampire Aura" level="10" cost="20" />
+        <entry category="spell" name="deadlycloud" display="Deadly Cloud" level="12" cost="6" duration="0" />
+        <entry category="spell" name="undyingmagic" display="Undying Magic" level="14" cost="15" duration="-1" />
     </listing>
     <listing skill="alteration">
-        <spell name="ogrestrength" display="Ogre Strength" level="4" cost="3" duration="30" />
-        <spell name="transmuteemerald" display="Transmute Emerald" level="6" cost="1" duration="0" />
-        <spell name="transmuteruby" display="Transmute Ruby" level="6" cost="1" duration="0" />
-        <spell name="transmutesapphire" display="Transmute Sapphire" level="6" cost="1" duration="0" />
-        <spell name="phasedoor" display="Phase Door" level="8" cost="2" duration="0" />
-        <spell name="giantstrength" display="Giant Strength" level="10" cost="4" duration="30" />
-        <spell name="improveweapon" display="Improve Weapon" level="10" cost="20" duration="0" />
-        <spell name="speed" display="Speed" level="10" cost="8" duration="30" />
-        <spell name="improvearmor" display="Improve Armor" level="12" cost="30" duration="0" />
-        <spell name="invisibility" display="Invisibility" level="14" cost="10" duration="30" />
-        <spell name="titanstrength" display="Titan Strength" level="16" cost="12" duration="30" />
+        <entry category="spell" name="ogrestrength" display="Ogre Strength" level="4" cost="3" duration="30" />
+        <entry category="spell" name="transmuteemerald" display="Transmute Emerald" level="6" cost="1" duration="0" />
+        <entry category="spell" name="transmuteruby" display="Transmute Ruby" level="6" cost="1" duration="0" />
+        <entry category="spell" name="transmutesapphire" display="Transmute Sapphire" level="6" cost="1" duration="0" />
+        <entry category="spell" name="phasedoor" display="Phase Door" level="8" cost="2" duration="0" />
+        <entry category="spell" name="giantstrength" display="Giant Strength" level="10" cost="4" duration="30" />
+        <entry category="spell" name="improveweapon" display="Improve Weapon" level="10" cost="20" duration="0" />
+        <entry category="spell" name="speed" display="Speed" level="10" cost="8" duration="30" />
+        <entry category="spell" name="improvearmor" display="Improve Armor" level="12" cost="30" duration="0" />
+        <entry category="spell" name="invisibility" display="Invisibility" level="14" cost="10" duration="30" />
+        <entry category="spell" name="titanstrength" display="Titan Strength" level="16" cost="12" duration="30" />
     </listing>
     <listing skill="protection">
-        <spell name="meleeprotection" display="Melee Protection" level="4" cost="2" duration="60" />
-        <spell name="shadowprotection" display="Shadow Protection" level="6" cost="4" duration="60" />
-        <spell name="coldprotection" display="Cold Protection" level="6" cost="3" duration="60" />
-        <spell name="fireprotection" display="Fire Protection" level="6" cost="4" duration="60" />
-        <spell name="poisonimmunity" display="Poison Immunity" level="8" cost="10" duration="60" />
-        <spell name="arcaneimmunity" display="Arcane Immunity" level="10" cost="2" duration="8" />
-        <spell name="frostimmunity" display="Frost Immunity" level="12" cost="2" duration="8" />
-        <spell name="fireimmunity" display="Fire Immunity" level="14" cost="2" duration="8" />
+        <entry category="spell" name="meleeprotection" display="Melee Protection" level="4" cost="2" duration="60" />
+        <entry category="spell" name="shadowprotection" display="Shadow Protection" level="6" cost="4" duration="60" />
+        <entry category="spell" name="coldprotection" display="Cold Protection" level="6" cost="3" duration="60" />
+        <entry category="spell" name="fireprotection" display="Fire Protection" level="6" cost="4" duration="60" />
+        <entry category="spell" name="poisonimmunity" display="Poison Immunity" level="8" cost="10" duration="60" />
+        <entry category="spell" name="arcaneimmunity" display="Arcane Immunity" level="10" cost="2" duration="8" />
+        <entry category="spell" name="frostimmunity" display="Frost Immunity" level="12" cost="2" duration="8" />
+        <entry category="spell" name="fireimmunity" display="Fire Immunity" level="14" cost="2" duration="8" />
     </listing>
     <listing skill="light">
-        <spell name="boltoflight" display="Bolt of Light" level="4" cost="2" duration="0" />
-        <spell name="lightaura" display="Light Aura" level="6" cost="5" />
-        <spell name="imbuedivinelight" display="Imbue Divine Light" level="6" cost="16" />
-        <spell name="salvation" display="Salvation" level="8" cost="1" duration="0" />
-        <spell name="divinefury" display="Divine Fury" level="10" cost="5" duration="0" />
-        <spell name="exorcise" display="Exorcise" level="12" cost="10" duration="0" />
+        <entry category="spell" name="boltoflight" display="Bolt of Light" level="4" cost="2" duration="0" />
+        <entry category="spell" name="lightaura" display="Light Aura" level="6" cost="5" />
+        <entry category="spell" name="imbuedivinelight" display="Imbue Divine Light" level="6" cost="16" />
+        <entry category="spell" name="salvation" display="Salvation" level="8" cost="1" duration="0" />
+        <entry category="spell" name="divinefury" display="Divine Fury" level="10" cost="5" duration="0" />
+        <entry category="spell" name="exorcise" display="Exorcise" level="12" cost="10" duration="0" />
     </listing>
 </dataset>

@@ -45,9 +45,9 @@ public class ListingParser implements ElementParser
                                     String qName, Attributes atts)
         throws SAXException
     {
-        if (localName.equals("spell"))
+        if (localName.equals("entry"))
         {
-            return new SpellParser();
+            return new EntryParser();
         }
         else
         {
