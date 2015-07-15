@@ -6,12 +6,8 @@ table {
     border-collapse: collapse;
 }
 
-div.wrapper {
-    width: 800px;
-}
-
 div.stored_div {
-    width: 50%;
+    width: 400px;
 }
 
 th.right {
