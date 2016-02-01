@@ -34,6 +34,10 @@
         <entry category="spell" name="bomb" display="Bomb" level="10" cost="1" duration="0" />
         <entry category="spell" name="webtrap" display="Web Trap" level="12" cost="1" />
         <entry category="spell" name="daggermastery3" display="Dagger Mastery 3" level="14" cost="2" duration="-1" />
+        <entry category="unique" name="stygma" display="Stygma" level="2" />
+        <entry category="unique" name="gaetha" display="Gaetha" level="6" />
+        <entry category="unique" name="ontrixion" display="Ontrixion" level="10" />
+        <entry category="unique" name="stivinsrib" display="Stivin's Rib" level="20" />
     </listing>
     <listing skill="sword">
         <entry category="spell" name="swordmastery1" display="Sword Mastery 1" level="2" cost="2" duration="-1" />
@@ -43,6 +47,11 @@
         <entry category="spell" name="windcut" display="Wind Cut" level="10" />
         <entry category="spell" name="parrywall" display="Parry Wall" level="12" />
         <entry category="spell" name="swordmastery3" display="Sword Mastery 3" level="14" cost="2" duration="-1" />
+        <entry category="unique" name="clamyxia" display="Clamyxia" level="2" />
+        <entry category="unique" name="rendaria" display="Rendaria" level="6" />
+        <entry category="unique" name="zweigart" display="Zweigart" level="10" />
+        <entry category="unique" name="edwardscursedblade" display="Edward's Cursed Blade" level="12" />
+        <entry category="special" name="cursededge" display="Cursed Edge" level="13" />
     </listing>
     <listing skill="mace">
         <entry category="spell" name="macemastery1" display="Mace Mastery 1" level="2" cost="2" duration="-1" />
@@ -52,6 +61,12 @@
         <entry category="spell" name="tremor" display="Tremor" level="10" cost="2" duration="0" />
         <entry category="spell" name="justice" display="Justice" level="12" cost="2" />
         <entry category="spell" name="macemastery3" display="Mace Mastery 3" level="14" cost="2" duration="-1" />
+        <entry category="spell" name="stunninghit" display="Stunning Hit" level="16" cost="2" duration="10" />
+        <entry category="unique" name="crusher" display="Crusher" level="2" />
+        <entry category="unique" name="ortox" display="Ortox" level="6" />
+        <entry category="unique" name="skeletroyer" display="Skeletroyer" level="10" />
+        <entry category="unique" name="bonebreaker" display="Bonebreaker" level="14" />
+        <entry category="special" name="hammerofthepaladin" display="Hammer of the Paladin" level="15" />
     </listing>
     <listing skill="axe">
         <entry category="spell" name="axemastery1" display="Axe Mastery 1" level="2" cost="2" duration="-1" />
@@ -61,6 +76,9 @@
         <entry category="spell" name="battlecry" display="Battle Cry" level="10" cost="2" />
         <entry category="spell" name="axeecution" display="Axe-Ecution" level="12" />
         <entry category="spell" name="axemastery3" display="Axe Mastery 3" level="14" cost="2" duration="-1" />
+        <entry category="unique" name="sorix" display="Sorix" level="2" />
+        <entry category="unique" name="gorkhaul" display="Gork' Haul" level="6" />
+        <entry category="unique" name="devian" display="Devian" level="10" />
     </listing>
     <listing skill="polearm">
         <entry category="spell" name="polearmmastery1" display="Polearm Mastery 1" level="2" cost="2" duration="-1" />
@@ -70,6 +88,9 @@
         <entry category="spell" name="moveout" display="Move Out" level="10" cost="2" duration="20" />
         <entry category="spell" name="extraordinaryscope" display="Extraordinary Scope" level="12" cost="3" duration="-1" />
         <entry category="spell" name="polearmmastery3" display="Polearm Mastery 3" level="14" cost="2" duration="-1" />
+        <entry category="unique" name="driniux" display="Driniux" level="2" />
+        <entry category="unique" name="zelantia" display="Zelantia" level="6" />
+        <entry category="unique" name="eviserax" display="Eviserax" level="10" />
     </listing>
     <listing skill="bow">
         <entry category="spell" name="bowmastery1" display="Bow Mastery 1" level="2" cost="2" duration="-1" />
@@ -80,6 +101,9 @@
         <entry category="spell" name="tripleshot" display="Triple Shot" level="12" cost="2" />
         <entry category="spell" name="bowmastery3" display="Bow Mastery 3" level="14" cost="2" duration="-1" />
         <entry category="spell" name="microexplosivearrows" display="Microexplosive Arrows" level="16" cost="3" duration="-1" />
+        <entry category="unique" name="skorpion" display="Skorpion" level="6" />
+        <entry category="unique" name="deathwind" display="Deathwind" level="10" />
+        <entry category="unique" name="hellfirebow" display="Hellfire Bow" level="20" />
     </listing>
     <listing skill="fire">
         <entry category="spell" name="firebolt" display="Firebolt" level="4" cost="1" duration="0" />
